@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RandomNumber</title>
+</head>
+<body>
+    
+    
+    <h2 id="changeText"> Random Number Generator </h2>
+
+    <p id="ranNum">Please click the button</p>
+
+    <button onclick="generateRanNum()" value="GenerateNumber"> Generate Number </button>
+
+     
+
+    <script>
+
+    
+
+    let x = Math.trunc(Math.random()*10);
+
+        function generateRanNum() {
+
+            document.getElementById("changeText").innerHTML="Your random number is:";
+            
+            document.getElementById("ranNum").innerHTML=x;
+
+                       
+        }
+
+        
+    </script>
+    
+</body>
+</html>
